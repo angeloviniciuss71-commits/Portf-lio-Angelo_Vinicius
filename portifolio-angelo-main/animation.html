@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portifolio - Angelo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="assets/news-report.png">
+</head>
+
+<body>
+  <section class="intro">
+
+    <div class="intro__content">
+      <h1 class="intro__title typewriter" aria-label="Welcome To My Portfolio Website">
+        <span class="typewriter__line muted" data-text="Welcome To My"></span><br>
+        <span class="typewriter__line accent" data-text="Portfolio Website"></span>
+      </h1>
+
+      <a class="intro__btn" id="enterBtn" href="home.html">Enter</a>
+    </div>
+
+    <div class="stage" aria-hidden="true">
+      <div class="rig"></div>
+
+      <div class="wall">
+        <div class="panel">
+          <svg class="screen" viewBox="0 0 1400 520" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <radialGradient id="bgGlow" cx="50%" cy="45%" r="70%">
+                <stop offset="0%" stop-color="#1fb3ff" stop-opacity=".25" />
+                <stop offset="55%" stop-color="#0a73ff" stop-opacity=".10" />
+                <stop offset="100%" stop-color="#071a33" stop-opacity="0" />
+              </radialGradient>
+
+              <linearGradient id="waveGrad" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#63d7ff" stop-opacity="0"/>
+                <stop offset="18%" stop-color="#63d7ff" stop-opacity=".85"/>
+                <stop offset="50%" stop-color="#0a73ff" stop-opacity="1"/>
+                <stop offset="82%" stop-color="#63d7ff" stop-opacity=".85"/>
+                <stop offset="100%" stop-color="#63d7ff" stop-opacity="0"/>
+              </linearGradient>
+
+              <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+                <feGaussianBlur stdDeviation="3" result="b"/>
+                <feMerge>
+                  <feMergeNode in="b"/>
+                  <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+              </filter>
+
+              <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+                <feGaussianBlur stdDeviation="0.8"/>
+              </filter>
+
+              <radialGradient id="earthSphere" cx="35%" cy="30%" r="70%">
+                <stop offset="0%" stop-color="#e9fbff" stop-opacity=".85"/>
+                <stop offset="35%" stop-color="#9af3ff" stop-opacity=".35"/>
+                <stop offset="70%" stop-color="#0a73ff" stop-opacity=".22"/>
+                <stop offset="100%" stop-color="#04122a" stop-opacity=".95"/>
+              </radialGradient>
+
+              <clipPath id="clipEarth">
+                <circle cx="0" cy="0" r="120"></circle>
+              </clipPath>
+
+              <symbol id="Earth" viewBox="-140 -140 280 280">
+                <circle r="120" fill="url(#earthSphere)"/>
+
+                <g clip-path="url(#clipEarth)">
+                  <g class="map">
+                    <g class="map-strip">
+                      <path class="land" d="M-150,-25 C-120,-60 -70,-70 -45,-35 C-30,-15 -20,0 -45,20 C-70,40 -95,35 -110,15 C-125,-5 -135,-5 -150,-25Z"/>
+                      <path class="land" d="M-30,-60 C-10,-75 20,-70 40,-50 C55,-35 60,-10 40,0 C15,12 -5,5 -15,-10 C-25,-25 -40,-35 -30,-60Z"/>
+                      <path class="land" d="M55,10 C75,-10 110,-5 130,25 C145,50 130,85 95,95 C70,102 45,88 40,65 C35,45 40,25 55,10Z"/>
+                      <path class="land" d="M-70,65 C-40,45 -10,55 5,75 C20,95 10,115 -20,118 C-55,122 -90,95 -70,65Z"/>
+                      <path class="land" d="M90,-85 C115,-95 140,-80 145,-60 C150,-35 125,-20 105,-25 C85,-30 70,-70 90,-85Z"/>
+
+                      <g transform="translate(300,0)">
+                        <path class="land" d="M-150,-25 C-120,-60 -70,-70 -45,-35 C-30,-15 -20,0 -45,20 C-70,40 -95,35 -110,15 C-125,-5 -135,-5 -150,-25Z"/>
+                        <path class="land" d="M-30,-60 C-10,-75 20,-70 40,-50 C55,-35 60,-10 40,0 C15,12 -5,5 -15,-10 C-25,-25 -40,-35 -30,-60Z"/>
+                        <path class="land" d="M55,10 C75,-10 110,-5 130,25 C145,50 130,85 95,95 C70,102 45,88 40,65 C35,45 40,25 55,10Z"/>
+                        <path class="land" d="M-70,65 C-40,45 -10,55 5,75 C20,95 10,115 -20,118 C-55,122 -90,95 -70,65Z"/>
+                        <path class="land" d="M90,-85 C115,-95 140,-80 145,-60 C150,-35 125,-20 105,-25 C85,-30 70,-70 90,-85Z"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+
+                <g class="earth-grid">
+                  <ellipse rx="120" ry="42" />
+                  <ellipse rx="120" ry="78" />
+                  <ellipse rx="120" ry="110" />
+                  <ellipse rx="42" ry="120" />
+                  <ellipse rx="78" ry="120" />
+                  <ellipse rx="110" ry="120" />
+                </g>
+
+                <circle r="120" class="earth-rim" />
+              </symbol>
+            </defs>
+
+            <rect x="0" y="0" width="1400" height="520" fill="rgba(6,14,28,.92)"/>
+            <rect x="0" y="0" width="1400" height="520" fill="url(#bgGlow)"/>
+
+            <g class="data">
+              <rect x="980" y="120" width="8" height="8"/>
+              <rect x="1008" y="180" width="10" height="10"/>
+              <rect x="1045" y="150" width="6" height="6"/>
+              <rect x="1120" y="210" width="8" height="8"/>
+              <rect x="1180" y="170" width="12" height="12"/>
+              <rect x="220" y="160" width="10" height="10"/>
+              <rect x="260" y="220" width="8" height="8"/>
+              <rect x="330" y="140" width="6" height="6"/>
+              <rect x="380" y="240" width="12" height="12"/>
+            </g>
+
+            <g class="grid">
+              <path d="M0 260H1400"/>
+              <path d="M700 0V520"/>
+              <path d="M0 130H1400"/>
+              <path d="M0 390H1400"/>
+            </g>
+
+            <g transform="translate(270 260)">
+              <use href="#Earth" class="earth earth-left"></use>
+            </g>
+            <g transform="translate(1130 260)">
+              <use href="#Earth" class="earth earth-right"></use>
+            </g>
+
+            <path class="wave w1"
+              d="M-40 260 C 160 140, 320 390, 520 260
+                 S 880 140, 1080 260
+                 S 1240 390, 1440 260" />
+            <path class="wave w2"
+              d="M-40 285 C 160 165, 320 415, 520 285
+                 S 880 165, 1080 285
+                 S 1240 415, 1440 285" />
+            <path class="wave w3"
+              d="M-40 235 C 160 115, 320 365, 520 235
+                 S 880 115, 1080 235
+                 S 1240 365, 1440 235" />
+          </svg>
+        </div>
+
+        <div class="noise"></div>
+        <div class="sheen"></div>
+      </div>
+
+      <div class="tickerWrap">
+        <div class="badge">
+          <span class="dot"></span>
+          <span>AO VIVO</span>
+          <span class="clock" id="clock">--:--:--</span>
+        </div>
+
+        <div class="ticker" aria-label="Ticker de notícias">
+          <div class="tickerTrack" id="tickerTrack"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
